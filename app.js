@@ -1,13 +1,15 @@
 import express from "express";
 import bodyParser from "body-parser";
+import ProductRouter from "./routes/ProductRouter.js";
 
 const app = express();
-import userRouter from "./routes/userRouter.js";
+const PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use("/user", userRouter);
+app.use("/product", ProductRouter);
+// API endpoints
 
-app.listen(3001, () => {
-  console.log("Server Started at Link http://localhost:3001");
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });
