@@ -4,7 +4,7 @@ This repository contains the code for a RESTful API for managing products in a s
 Setup Instructions
 Clone the repository to your local machine.
 Install the required dependencies by running npm install.
-Start the server by running npm run [ServerFile].
+Start the server by running npm run ./app.js.
 Make sure to set up your MongoDB connection details in the Connection.js file before running the application.
 
 Endpoints
