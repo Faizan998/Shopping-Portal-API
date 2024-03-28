@@ -10,7 +10,7 @@ Make sure to set up your MongoDB connection details in the Connection.js file be
 Endpoints
 
 1. Save Product
-   URL: /products
+   URL:http://localhost:3000/product/save
    Method: POST
    Description: Creates a new product and saves it to the database.
 
@@ -27,7 +27,7 @@ Response:{
 }
 
 2. Fetch Products
-   URL: /products
+   URL: http://localhost:3000/product/fetch
    Method: GET
    Description: Retrieves a list of products from the database.
    Query Parameters: Optional query parameters can be provided to filter the products.
@@ -51,7 +51,7 @@ Response:{
    ]
 
 3. Delete Product
-   URL: /products/:id
+   URL: http://localhost:3000/product/delete
    Method: DELETE
    Description: Deletes a product from the database based on the provided ID.
    Response:{
@@ -59,7 +59,7 @@ Response:{
    }
 
 4. Update Product
-   URL: /products/:id
+   URL: http://localhost:3000/product/update
    Method: PUT
    Description: Updates a product in the database based on the provided ID.
    Request Body:{
